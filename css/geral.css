@@ -108,8 +108,12 @@ body{
     padding: 10px;
 }
 
-#opcoesbuscachamp div a{
+#opcoesbuscachamp div button{
     width: 300px;
+    border: none;
+    background-color: rgba(169, 169, 169, 0);
+    text-align: left;
+    font-size: 40px;
 }
 #opcoesbuscachamp div img{
     display: flex;

@@ -78,6 +78,7 @@ function enviarnome() {
         </div>
         `   
     })
+    setTimeout(enviarnome, 100)
     .catch(error => console.error(error));
 }
 
