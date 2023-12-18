@@ -10,11 +10,19 @@
 </head>
 <body>
     <img class="lolicon" src="../image/lolicon.png" alt="">
-    <div class="botaotext">
-        <input id="nomechamp" type="text">
-        <button class="botaoenviar" onclick="enviarnome()"><h1>BUSCAR</h1></button>
+    <div id="mostrarchamps" class="botaotext">
+        <div>
+            <div class="nomebotaoenviar">
+                <input id="nomechamp" type="text">
+                <button id="botaoesconderdiv" class="botaoenviar" onclick="enviarnome()"><h1>BUSCAR</h1></button>
+            </div>
+        </div>
+        <div id="opcoesbuscachamp">
+
+        </div>
     </div>
     <div id="conteudochamp">
     </div>
+    <script src="../js/busca.js"></script>
 </body>
 </html>

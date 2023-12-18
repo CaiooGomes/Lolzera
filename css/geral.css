@@ -19,6 +19,7 @@ body{
     justify-content: center;
     margin-top: -30px;
     position: fixed;
+    flex-direction: column;
 }
 
 .botaotext button{
@@ -31,7 +32,7 @@ body{
     font-size: 9px;
     display: flex;
     justify-content: center;
-    border-radius: 0px 10px 10px 0px;
+    border-radius: 0px 10px 0px 0px;
 }
 .botaotext button:hover{
     cursor: pointer;
@@ -46,7 +47,7 @@ body{
     border-right: none;
     background-color: rgb(13, 29, 58);
     color: white;
-    border-radius: 10px 0px 0px 10px;
+    border-radius: 10px 0px 0px 0px;
     padding: 10px;
 }
 .lorebotao{
@@ -78,3 +79,44 @@ body{
     scale: 1.05;
     border-radius: 10px 10px 10px 10px;
 }
+
+.nomebotaoenviar{
+    display: flex;
+    border-radius: 10px 0px 10px 0px;
+    z-index: 1;
+}
+
+#opcoesbuscachamp{
+    background-image:linear-gradient(to right,rgb(10, 50, 60),rgb(3, 151, 171)) ;
+    padding: 10px;
+    color: white;
+    font-size: 40px;
+    border: 2px solid rgb(0, 90, 130);
+    border-top: none;
+    width: 398px;
+}
+.Mostrardiv{
+    height: 500px;
+    overflow-y: scroll;
+}
+#opcoesbuscachamp div{
+    border-bottom: 3px solid rgb(0, 90, 130);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+#opcoesbuscachamp div a{
+    width: 300px;
+}
+#opcoesbuscachamp div img{
+    display: flex;
+    float: left;
+    height: 100px;
+    border-radius: 0% 50% 50% 0%;
+    border: 4px black solid;
+    border-left: 4px solid rgb(200, 155, 60);
+}
+

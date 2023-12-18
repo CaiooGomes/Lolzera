@@ -3,9 +3,15 @@ let campeaodata;
 let indiceSkinAtual = 0;
 let nomecampeao
 
+function primeiraLetraMaiuscula(str) {
+    return str.charAt(0).toUpperCase() + str.slice(1);
+}
+
 function enviarnome() {
     var textocampeao = document.getElementById("nomechamp")
-    nomecampeao = textocampeao.value
+
+    nomecampeaomaiusculo = textocampeao.value
+    nomecampeao = primeiraLetraMaiuscula(nomecampeaomaiusculo)
     var conteudochamp = document.getElementById("conteudochamp")
     const url = `https://ddragon.leagueoflegends.com/cdn/11.14.1/data/en_US/champion/${nomecampeao}.json`;
     const cardchamp = `https://ddragon.leagueoflegends.com/cdn/img/champion/loading/${nomecampeao}_0.jpg`
