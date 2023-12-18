@@ -59,9 +59,11 @@
 .skills h3{
     margin-top: -8px;
     border-bottom: 4px solid rgb(120, 90, 40);
-    border-radius: 0px 0px 0px 10px;
+    border-radius: 10px 10px 0px 10px;
     color: rgb(255, 255, 255);
     font-style: italic;
+    padding: 5px;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.372), rgba(0, 0, 0, 0));
 }
 
 .skills div{
