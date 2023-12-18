@@ -1,0 +1,129 @@
+.Informações{
+    display: flex;
+    padding: 20px;
+    border: 2px solid rgb(0, 90, 130);
+    margin-top: 50px;
+    border-radius: 10px;
+    background-image: linear-gradient(to right bottom, rgb(10, 20, 40), rgb(0, 90, 130) );
+    border-right: 2px solid rgb(200, 155, 60);
+    align-items: center;
+}
+
+.card img{
+    float: left;
+    border: 4px solid black;
+    background-color: black;
+    border-radius: 10px;
+    height: fit-content;
+    display: flex;
+}
+
+.card div h1{
+    animation: mudarcornome 3s infinite;
+}
+.card{
+    display: flex;
+    width: 900px;
+    height: fit-content;
+    border-right: 4px solid rgb(120, 90, 40);
+    border-radius: 0px 10px 10px 0px;
+}
+
+.nometitulolore{
+    color: rgb(255, 255, 255);
+    width: 300px;
+
+    padding: 20px;
+    height: fit-content;
+}
+.nometitulolore h1{
+    font-size: 60px;
+}
+.nometitulolore h2{
+    font-size: 30px;
+    margin-top: -30px;
+}
+.nometitulolore h3{
+    color: rgb(255, 255, 255);
+    font-style: italic;
+}
+
+.skills{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    justify-content: space-around;
+    width: 1200px;
+    margin-right: 20px;
+}
+.skills h3{
+    margin-top: -8px;
+    border-bottom: 4px solid rgb(120, 90, 40);
+    border-radius: 0px 0px 0px 10px;
+    color: rgb(255, 255, 255);
+    font-style: italic;
+}
+
+.skills div{
+    display: flex;
+    align-items: center;
+    color: rgb(225, 175, 67);
+}
+
+
+.skills img{
+    border: black solid 4px;
+    border-radius: 10px;
+    height: 50px;
+    width: 50px;
+    margin-right: 20px;
+}
+
+.icon{
+    display: flex;
+    float: right;
+    width: fit-content;
+    justify-content: end;
+    align-items: end;
+    height: 100%;
+}
+.icon img{
+    height: max-content;
+    width: max-content;
+    border: 4px solid black;
+    border-radius: 10px;
+    animation: sombraicon infinite 3s;
+}
+
+@keyframes mudarcornome{
+    0%{
+        color: rgb(200, 155, 60);
+    }
+    50%{
+        color: rgb(70, 55, 20);
+    }
+    100%{
+        color: rgb(200, 155, 60);
+    }
+}
+
+@keyframes sombraicon{
+    0%{
+        box-shadow: 0px -10px 10px 5px;
+    }
+    50%{
+        box-shadow: 0px 10px 10px 5px;
+    }
+    100%{
+        box-shadow: 0px -10px 10px 5px;
+    }
+}
+.botaolore{
+    background-color: rgba(255, 0, 0, 0);
+    border: none;
+}
+.botaolore:hover{
+    scale: 1.05;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
