@@ -50,7 +50,7 @@ divhtmlopcoes.addEventListener('click', function(event) {
             
             const champsHTML = campeoesInfo.map(campeao => `
             <div>
-                <button onclick="enviarnome()">
+                <button onclick="delayiniciar()">
                     ${campeao.nome}<br>
                 </button>
                 <img src="https://ddragon.leagueoflegends.com/cdn/13.24.1/img/champion/${campeao.imagem}" alt="${campeao.nome}">
@@ -63,10 +63,12 @@ divhtmlopcoes.addEventListener('click', function(event) {
             caixaOpcoesPesquisa.innerHTML = "Erro ao buscar dados.";
         });
     }
-    
     function esconderOpcoesBusca() {
         divhtmlopcoes.innerHTML = ``
         divhtmlopcoes.classList.remove("Mostrardiv")
+    }
+    function delayiniciar(){
+        setTimeout(enviarnome, 100)
     }
 
 

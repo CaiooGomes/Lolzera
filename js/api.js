@@ -71,16 +71,15 @@ function enviarnome() {
         </div>
         
         <div class="icon">
-            <button onclick="mostrarlore()" class="botaolore">
                 <img src="${iconchamp}">
-            </button>
         </div>
         </div>
         `   
     })
-    setTimeout(enviarnome, 100)
     .catch(error => console.error(error));
+
 }
+
 
 
 function trocarSkin() {
